@@ -1,0 +1,250 @@
+.input {
+	font-weight: 200;
+	font-family: inherit;
+	font-size: 12px;
+    border-color: #f5f500;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: #f5f500;
+	/* width: 100%; */
+	/* background-color: #000; */
+	outline: none; 
+  margin: 0px 3px;
+}
+.input_add {
+	border: none;
+	outline: none;
+	padding: 20px 20px;
+    margin: 10px 20px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	flex: 1;
+	font-family: inherit;
+	font-size: 12px;
+	color: #555;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    resize: none;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.hr {
+    border: 0;
+border-top: 2px solid #999; 
+border-bottom: 2px solid #333;
+height:0;
+}
+
+.controls {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .buttons_group {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 0 1%;
+
+  }
+  .button_add {
+    cursor: pointer;
+    font-size: 10px;
+    border: none;
+    background-color: #03d033;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 5px;
+    height: 25px;
+    width: 150px;
+  }
+  
+  .button_add:hover,
+  .button_add:active {
+    background: #00fb3f;
+    border-color: #075d1d;
+  }
+  
+  .button_add:focus {
+    outline: none;
+  }
+
+  .button_delete {
+    cursor: pointer;
+    font-size: 10px;
+    border: none;
+    background-color: #d50707;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 5px;
+    height: 25px;
+    width: 150px;
+  }
+  
+  .button_delete_single {
+    cursor: pointer;
+    font-size: 10px;
+    border: none;
+    background-color: #d50707;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 5px;
+    height: 25px;
+    width: 50px;
+  }
+
+  .button_update {
+    cursor: pointer;
+    font-size: 10px;
+    border: none;
+    background-color: #d50707;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 5px;
+    height: 25px;
+    width: 50px;
+  }
+  
+  .button_delete:hover,
+  .button_delete:active {
+    background: #ff0000;
+    border-color: #9c0505;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+
+  .ul {
+	margin-top: 5px;
+    margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+    padding-left: 5px;
+    overflow: auto;
+    max-height: 400px;
+    position: relative;
+    }
+
+    .li {
+        list-style: none;
+        display: flex;
+        /* justify-content:space-between; */
+        align-items: center;
+        gap: 10px;
+        max-width: 800px;
+        border: #d50707;
+        padding: 0;
+        margin-left: 0px;
+        position: relative;
+        margin:10px 0 10px 0; 
+        
+    }
+    
+        
+    .form {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    
+
+    }
+
+ 
+
+    .span {
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+    
+
+    .container_done {
+  
+        padding: 5px;
+        border-radius: 20px;
+        height: 100px;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    .done_task {
+        background-color: rgba(255, 255, 255, 0.55);
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+        border: 2px solid #00fb3f;
+        cursor: pointer;
+    }
+
+
+
+    .done_task_active {
+        background-color: #00fb3f;
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+        border: 2px solid #00fb3f;
+        cursor: pointer;
+    }
+
+    .hour{
+        background: rgba(255, 255, 255, 0.55);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+        position: relative;
+    }
+
+    .hour h4{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    ;
+    }
+
+    .line {
+      position: absolute;
+      top: 50%; /* posicion en el centro del div */
+      width: 100%; /* ancho total del div */
+      height: 1px; /* altura de la linea */
+      background-color: black; /* color de la linea */
+    }

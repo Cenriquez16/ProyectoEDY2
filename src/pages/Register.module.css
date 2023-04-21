@@ -1,0 +1,223 @@
+.main {
+  position: relative;
+    display: flex;
+    background-color: rgb(23,23,23);
+    height: 100vh;
+    width: 100%;
+    color: #ccc;
+}
+
+main .imgbox{
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+}
+
+
+main .imgbox img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+    width: 100%;
+    height: 100%;
+z-index: 1
+;
+}
+
+main .imgbox img {
+  position: absolute;
+  top: 0;
+  right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+main .contentBox{
+
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contentBox .formBox{
+  width: 50%;
+}
+
+main .contentBox .formBox h1{
+  font-weight: 200;
+  font-size: 4rem;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+main .contentBox .formBox h2{
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+main .contentBox .formBox h4{
+  font-weight: 100;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+main .contentBox .formBox .inputBox{
+
+  margin-bottom: 5px;
+}
+
+main .contentBox .formBox .inputBox input{
+
+ width: 100%;
+ padding: 10px 20px;
+ outline: none;
+ font-weight: 200;
+ border: 1px solid #607d8b;
+ font-size: 14px;
+ letter-spacing: 1px;
+ color: #fdfeff;
+ background: transparent;
+ border-radius: 30px;
+ height: 30px;
+}
+
+main .contentBox .formBox .inputBox button{
+
+  font: inherit;
+  background-color: #af4f00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 10px;
+ }
+
+ main .contentBox .formBox .inputBox button:hover,
+main .contentBox .formBox .inputBox button:active {
+  background-color: #ff7300;
+  border-color: #d96201;
+  margin: 10px;
+  color: white;
+} 
+
+main .contentBox .formBox .inputBox button:disabled,
+main .contentBox .formBox .inputBox button:disabled:hover,
+main .contentBox .formBox .inputBox button:disabled:active {
+  background-color: #ccc;
+  color:#0f0f0f;
+  border-color: #ccc;
+  cursor: not-allowed;
+  margin: 10px;
+}
+
+main .contentBox .formBox .inputBox a{
+
+  color: white;
+  font: inherit;
+  font-weight: 100;
+  outline: none;
+  text-decoration: none;
+ }
+
+ .error_text{
+  z-index: 1;
+  color: #af4f00;
+  position: absolute;
+  display: inline-flex;
+  margin-left: 4px;
+ }
+
+ .error_text p{
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+ @media (max-width: 768px){
+
+  main .imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  main .contentBox{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  main .contentBox .formBox{
+    width: 100%;
+    padding: 40px;
+    background-color:  rgb(23,23,23, 0.9);
+    margin: 40px;
+  }
+
+  .logIcon{
+    position: absolute;
+    display: block;
+    bottom: 39%;
+    right: 14%;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .lockIcon{
+    position: absolute;
+    display: block;
+    bottom: 54%;
+    right: 14%;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+ }
